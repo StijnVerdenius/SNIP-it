@@ -23,23 +23,23 @@ The repository implements novel pruning / compression algorithms for deep learni
 
 ### Setup
 
-Install virtualenv
+- Install virtualenv
 
-> pip3 install virtualenv
+> `pip3 install virtualenv`
 
-Create environment
+- Create environment
 
-> virtualenv -p python3 ~/virtualenvs/SNIPIT
+> `virtualenv -p python3 ~/virtualenvs/SNIPIT`
 
-Activate environment
+- Activate environment
 
-> source ~/virtualenvs/SNIPIT/bin/activate
+> `source ~/virtualenvs/SNIPIT/bin/activate`
 
-Install requirements:
+- Install requirements:
 
-> pip install -r requirements.txt
+> `pip install -r requirements.txt`
 
-If you mean to run the Imagenette dataset: download that from [its github repository](https://github.com/fastai/imagenette) and unpack in `/gitignored/data/`, then replace CIFAR10 with IMAGENETTE below to run. Additional datasets can be added in a similar way (Imagewoof, tiny-imagenet, etc.)
+- If you mean to run the Imagenette dataset: download that from [its github repository](https://github.com/fastai/imagenette) and unpack in `/gitignored/data/`, then replace CIFAR10 with IMAGENETTE below to run. Additional datasets can be added in a similar way (Imagewoof, tiny-imagenet, etc.)
 
 ### Training Examples & Results
 
