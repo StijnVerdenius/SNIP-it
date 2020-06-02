@@ -4,11 +4,22 @@
 
 [![Python 3.7](https://img.shields.io/badge/Python-3.7-green.svg)](https://www.python.org/) [![PyTorch 1.4](https://img.shields.io/badge/PyTorch-1.4-red.svg?logo=pytorch)](https://pytorch.org/docs/1.4.0/) [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=mit)](LICENSE)
 
-This repository is the official implementation of the paper [Pruning via Iterative Ranking of Sensitivity Statistics](TODO).
+This repository is the official implementation of the paper [Pruning via Iterative Ranking of Sensitivity Statistics](https://arxiv.org/abs/2006.00896). 
+Currently under review. Please use this preliminary BibTex entry when reffering to our work:
 
 ```reference
 @article{verdenius2020pruning,
-TODO
+       author = {{Verdenius}, Stijn and {Stol}, Maarten and {Forr{\'e}}, Patrick},
+        title = "{Pruning via Iterative Ranking of Sensitivity Statistics}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+         year = 2020,
+        month = jun,
+          eid = {arXiv:2006.00896},
+        pages = {arXiv:2006.00896},
+archivePrefix = {arXiv},
+       eprint = {2006.00896},
+ primaryClass = {cs.LG},
 }
 ```
 
