@@ -6,7 +6,7 @@ networkx==2.4
 foolbox==3.0.0
 Markdown==3.1.1
 scikit_learn==0.23.1
-tensorboard==1.14.0
+tensorboard==1.15.0
 tensorboardX==1.8
-tensorflow==1.14.0
+tensorflow==1.15.2
 requests==2.23
