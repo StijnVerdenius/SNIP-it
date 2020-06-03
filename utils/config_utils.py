@@ -92,7 +92,7 @@ def parse() -> argparse.Namespace:
                         help="name of adversarial attack if ran in that setting (=eval with the right testscheme)")
 
     # technical specifications
-    parser.add_argument("--device", type=str, default="cpu", help="cpu or gpu")
+    parser.add_argument("--device", type=str, default="cuda", help="cpu or gpu")
     parser.add_argument('--run_name', default="_example_runname", type=str, help='extra identification for run')
 
     # checkpoints

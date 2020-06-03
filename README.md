@@ -5,7 +5,7 @@
 [![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB.svg?logo=python)](https://www.python.org/) [![PyTorch 1.4](https://img.shields.io/badge/PyTorch-1.4-EE4C2C.svg?logo=pytorch)](https://pytorch.org/docs/1.4.0/) [![MIT](https://img.shields.io/badge/License-MIT-3DA639.svg?logo=open-source-initiative)](LICENSE)
 
 This repository is the **official** implementation of the paper [Pruning via Iterative Ranking of Sensitivity Statistics](https://arxiv.org/abs/2006.00896). 
-Currently under review. Please use this preliminary BibTex entry when reffering to our work:
+Currently under review. Please use this preliminary BibTex entry when referring to our work:
 
 ```reference
 @article{verdenius2020pruning,
@@ -25,7 +25,7 @@ archivePrefix = {arXiv},
 
 ### Content
 
-The repository implements novel pruning / compression algorithms for deep learning / neural networks. Aditionally, it implements the shrinkage of actual tensors to really benefit from structured pruning without external hardware libraries. We implement:
+The repository implements novel pruning / compression algorithms for deep learning / neural networks. Additionally, it implements the shrinkage of actual tensors to really benefit from structured pruning without external hardware libraries. We implement:
 
 - Structured (node) pruning before training
 - Structured (node) pruning during training
@@ -50,7 +50,7 @@ The repository implements novel pruning / compression algorithms for deep learni
 
 > `pip install -r requirements.txt`
 
-- If you mean to run the Imagenette dataset: download that from [its github repository](https://github.com/fastai/imagenette) and unpack in `/gitignored/data/`, then replace CIFAR10 with IMAGENETTE below to run. Additional datasets can be added in a similar way (Imagewoof, tiny-imagenet, etc.)
+- If you mean to run the 'Imagenette' dataset: download that from [here](https://github.com/fastai/imagenette) and unpack in `/gitignored/data/`, then replace CIFAR10 with IMAGENETTE below to run. Additional datasets can be added in a similar way (Imagewoof, tiny-imagenet, etc.)
 
 ### Training Examples & Results
 
@@ -97,7 +97,7 @@ python main.py --eval --model MLP5 --data_set MNIST --checkpoint_name <see_resul
 
 ### Arguments
 
-The regulare arguments for running are the following. Aditionally, there are some more found in utils/config_utils.py.
+The regular arguments for running are the following. Additionally, there are some more found in utils/config_utils.py.
 
 | **argument**          | **description**                                            |**type**|
 |-----------------------|------------------------------------------------------------|-------|
@@ -143,8 +143,8 @@ Some notes:
 ### Codebase Design
 
 - Codebase is built modularly so that every criterion or model that is added to its designated folder, provided its filename is equal to its classname, can be ran via string argument immediately. This way its easily extendable.
-- The same goes for training schemes; implemented here as classes and automatically loaded in by string reference. When you need new functionality concerning one aspect of training you can simply inheret the `DefaultTrainer` and then override only that function you need differently. Alternativly, you can make your own training scheme, the sky is the limit!
-- All entrypoints go through `main.py`, where the required models are loaded and thereafter redirected to the right training or testing scheme.
+- The same goes for training schemes; implemented here as classes and automatically loaded in by string reference. When you need new functionality concerning one aspect of training you can simply inheret the `DefaultTrainer` and then override only that function you need differently. Alternatively, you can make your own training scheme, the sky is the limit!
+- All entry-points go through `main.py`, where the required models are loaded and thereafter redirected to the right training or testing scheme.
 - All results show up at the path `/gitignored/results/` in its own (dated) folder. In here you find a copy of the codebase at the time of execution, its calling command, tensorboard output, saved models and logs.
 - In the file utils/autoconfig.json certain automatic configurations get set to make it easier to run different models in sequence. You can disable this with `--disable_autoconfig`, but it is *strongly recommended against*.
 
