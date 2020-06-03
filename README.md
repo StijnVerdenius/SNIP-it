@@ -2,7 +2,7 @@
 # SNIP-it / SNAP-it
 ## (Un)structured Pruning via Iterative Ranking of Sensitivity Statistics
 
-[![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)](https://www.python.org/) [![PyTorch 1.4](https://img.shields.io/badge/PyTorch-1.4-red.svg?logo=pytorch)](https://pytorch.org/docs/1.4.0/) [![MIT](https://img.shields.io/badge/License-MIT-green.svg?logo=open-source-initiative)](LICENSE)
+[![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB.svg?logo=python)](https://www.python.org/) [![PyTorch 1.4](https://img.shields.io/badge/PyTorch-1.4-EE4C2C.svg?logo=pytorch)](https://pytorch.org/docs/1.4.0/) [![MIT](https://img.shields.io/badge/License-MIT-3DA639.svg?logo=open-source-initiative)](LICENSE)
 
 This repository is the official implementation of the paper [Pruning via Iterative Ranking of Sensitivity Statistics](https://arxiv.org/abs/2006.00896). 
 Currently under review. Please use this preliminary BibTex entry when reffering to our work:
