@@ -9,6 +9,10 @@ from utils.constants import TIMEOUT
 from utils.data_manager import DataManager
 
 
+"""
+Handles loading config and autoconfig
+"""
+
 def configure_seeds(arguments, device):
     seed = arguments.seed
     torch.manual_seed(seed)

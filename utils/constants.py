@@ -4,6 +4,8 @@ import numpy as np
 
 from utils.data_manager import DataManager
 
+
+
 PROJ_NAME = "SNIP-it"
 WORKING_DIR_PATH = "."
 

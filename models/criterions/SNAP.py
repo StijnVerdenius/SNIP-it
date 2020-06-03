@@ -18,7 +18,7 @@ from utils.snip_utils import group_snip_forward_linear, group_snip_conv2d_forwar
 class SNAP(General):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper:  https://arxiv.org/abs/2006.00896
     Implements SNAP (structured), which is one of the steps from the algorithm SNAP-it
     Additionally, this class contains most of the code the actually reduce pytorch tensors, in order to obtain speedup
     """

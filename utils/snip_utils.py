@@ -1,5 +1,8 @@
 import torch.nn.functional as F
 
+"""
+assisting maskeable functions for the methods we introduced.
+"""
 
 def snip_forward_conv2d(self, x):
     return F.conv2d(x,

@@ -18,7 +18,7 @@ from utils.system_utils import *
 class DefaultTrainer:
 
     """
-    Standard CV classification with pruning
+    Implements generalised computer vision classification with pruning
     """
 
     def __init__(self,

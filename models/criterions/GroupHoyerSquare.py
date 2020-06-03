@@ -9,7 +9,7 @@ from utils.constants import HOYER_THERSHOLD
 class GroupHoyerSquare(StructuredRandom):
 
     """
-    Own interpretation of the threshold trimming part (only) of Group-HS from the paper:
+    Our interpretation/implementation of the threshold trimming part (only) of Group-HS from the paper:
     DeepHoyer: Learning Sparser Neural Network with Differentiable Scale-Invariant Sparsity Measures
     https://arxiv.org/abs/1908.09979
     """

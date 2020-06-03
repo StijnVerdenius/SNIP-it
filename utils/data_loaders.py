@@ -10,6 +10,9 @@ from torchvision import datasets, transforms
 from utils.constants import NUM_WORKERS, FLIP_CHANCE, DATASET_PATH, IMAGENETTE_DIR, TINY_IMAGNET_DIR, \
     IMAGEWOOF_DIR
 
+"""
+Handles loading datasets
+"""
 
 def get_imagenette_loaders(arguments):
     mean = [0.485, 0.456, 0.406]

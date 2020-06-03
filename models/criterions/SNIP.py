@@ -10,10 +10,11 @@ from utils.constants import RESULTS_DIR, OUTPUT_DIR, SNIP_BATCH_ITERATIONS
 class SNIP(General):
 
     """
-    Own interpretation of SNIP from the paper:
+    Our interpretation/implementation of SNIP from the paper:
     SNIP: Single-shot Network Pruning based on Connection Sensitivity
     https://arxiv.org/abs/1810.02340
-    Additionally, edited to use elasticity as a criterion, which is our won contribution, from our paper: todo
+    Additionally, edited to use elasticity as a criterion instead of sensitivity, which we describe and justify in our paper:
+    https://arxiv.org/abs/2006.00896
     """
 
     def __init__(self, *args, **kwargs):

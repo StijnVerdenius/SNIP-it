@@ -5,6 +5,10 @@ from datetime import datetime
 from utils.constants import *
 from utils.model_utils import save_models
 
+"""
+Handles interactions with system
+"""
+
 
 def ensure_current_directory():
     """

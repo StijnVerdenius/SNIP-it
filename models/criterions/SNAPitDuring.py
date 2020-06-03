@@ -5,7 +5,7 @@ from models.criterions.SNAPit import SNAPit
 class SNAPitDuring(SNAPit):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper:  https://arxiv.org/abs/2006.00896
     Implements SNAP-it (during training)
     """
 

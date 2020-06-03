@@ -15,7 +15,7 @@ from torch.utils.tensorboard import SummaryWriter
 from models.criterions.SNIP import SNIP
 
 """
-Util classes regarding data collection, management, prinitng and storing
+Util classes regarding data collection, management, printing and storing
 """
 
 class Metric(list):

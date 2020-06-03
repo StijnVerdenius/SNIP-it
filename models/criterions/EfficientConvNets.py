@@ -8,7 +8,7 @@ from models.criterions.StructuredRandom import StructuredRandom
 class EfficientConvNets(StructuredRandom):
 
     """
-    Own intepretation of the algorithm described in the paper:
+    Our interpretation/implementation of the pruning algorithm described in the paper:
     Pruning filters for efficient ConvNets
     https://arxiv.org/abs/1608.08710
     """

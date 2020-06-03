@@ -6,7 +6,7 @@ from models.criterions.General import General
 class EmptyCrit(General):
 
     """
-    For when you don't want to prune
+    Placeholder class for when you don't want to prune
     """
 
     def __init__(self, *args, device="cuda", **kwargs):

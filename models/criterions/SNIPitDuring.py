@@ -5,7 +5,7 @@ from models.criterions.SNIPit import SNIPit
 class SNIPitDuring(SNIPit):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper:  https://arxiv.org/abs/2006.00896
     Implements SNIP-it (during training)
     """
 

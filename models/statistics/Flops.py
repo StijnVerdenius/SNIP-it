@@ -10,6 +10,10 @@ class FLOPCounter:
 
     """
     Estimates current FLOPS usage of one sample or cumulatively
+    Loosely based on implementation from:
+
+    Sourced from their github at:
+
     """
 
     def __init__(self, model, test_batch, batch_size, device="cuda"):

@@ -12,7 +12,7 @@ limit_a, limit_b, epsilon = -.1, 1.1, 1e-6
 
 
 """
-Sourced code of l0-regularisation from the paper:
+Adapted code for l0-regularisation from the paper:
 Learning Sparse Neural Networks through L0 regularisation
 https://arxiv.org/abs/1712.01312
 Implements NN layers

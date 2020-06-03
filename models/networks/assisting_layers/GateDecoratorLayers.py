@@ -5,7 +5,7 @@ from torch import nn as nn
 class GatedBatchNorm(nn.Module):
 
     """
-    Own interpretation of GatedBatchNorm of the paper
+    Our interpretation/implementation of GatedBatchNorm of the paper
     Gate Decorator: Global Filter Pruning Method for Accelerating Deep Convolutional Neural Networks
     https://arxiv.org/abs/1909.08174
     """

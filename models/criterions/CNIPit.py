@@ -4,7 +4,7 @@ from models.criterions.CNIP import CNIP
 class CNIPit(CNIP):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper: https://arxiv.org/abs/2006.00896
     Combines SNIP (unstructured) and SNAP (structured) on equal footing in an itertive algorithm
     Implements CNIP-it (before training)
     """

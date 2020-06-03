@@ -10,7 +10,7 @@ from utils.constants import SNIP_BATCH_ITERATIONS
 class GateDecorators(SNAP):
 
     """
-    Own interpretation of GateDecorators pruning of the paper
+    Our interpretation/implementation of GateDecorators pruning of the paper
     Gate Decorator: Global Filter Pruning Method for Accelerating Deep Convolutional Neural Networks
     https://arxiv.org/abs/1909.08174
     """

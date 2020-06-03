@@ -4,7 +4,7 @@ from models.criterions.SNAP import SNAP
 class SNAPit(SNAP):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper:  https://arxiv.org/abs/2006.00896
     Implements SNAP-it (before training)
     SNAP-it (before training) provides computational benefits from the start of training
     """

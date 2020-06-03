@@ -6,7 +6,8 @@ from models.GeneralModel import GeneralModel
 class General(GeneralModel):
 
     """
-    parent class that is to be removed
+    parent class
+    > deprecated
     """
 
     def __init__(self, *args, model=None, device="cuda", before_training=False, structured=False, **kwargs):

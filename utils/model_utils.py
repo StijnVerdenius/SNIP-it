@@ -10,6 +10,9 @@ from utils.data_loaders import *
 
 models = {x: {} for x in types}
 
+"""
+Handles loading/init/saving of models and more
+"""
 
 def _read_all_class_names():
     """

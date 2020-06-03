@@ -2,6 +2,10 @@ import numpy as np
 from torch import nn
 
 
+"""
+Just some util functions
+"""
+
 def smooth(array, window=5000):
     new_array = np.zeros_like(array)
     for i in range(len(array)):

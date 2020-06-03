@@ -8,6 +8,11 @@ import matplotlib.pyplot as plt
 
 
 class DataManager:
+    """
+    Handles saving and loading of pickle files
+    also implements a faster deepcopy
+    and defines the savename in the results folder
+    """
 
     def __init__(self, directory):
 

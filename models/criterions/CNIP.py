@@ -7,7 +7,7 @@ from models.criterions.SNIP import SNIP
 class CNIP(SNIP, SNAP):
 
     """
-    Original creation from our paper: todo
+    Original creation from our paper: https://arxiv.org/abs/2006.00896
     Combines SNIP (unstructured) and SNAP (structured) on equal footing
     """
 

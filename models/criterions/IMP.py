@@ -6,7 +6,7 @@ from models.criterions.General import General
 class IMP(General):
 
     """
-    Own interpretation from the (global) magnitude pruning part of the IMP algorithm from the papers
+    Our interpretation/implementation from the (global) magnitude pruning part of the IMP algorithm from the papers
     https://arxiv.org/abs/1803.03635
     https://arxiv.org/abs/1903.01611
     """

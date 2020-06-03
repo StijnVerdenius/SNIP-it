@@ -12,7 +12,7 @@ from utils.constants import SNIP_BATCH_ITERATIONS
 class GRASP(SNIP):
 
     """
-    Adapted implementation of GraSP of the paper:
+    Adapted implementation of GraSP from the paper:
     Picking Winning Tickets Before Training by Preserving Gradient Flow
     https://arxiv.org/abs/2002.07376
     from the authors' github:
