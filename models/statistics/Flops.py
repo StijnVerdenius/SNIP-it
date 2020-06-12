@@ -11,9 +11,10 @@ class FLOPCounter:
     """
     Estimates current FLOPS usage of one sample or cumulatively
     Loosely based on implementation from:
-
+    Rethinking the Value of Network Pruning
+    https://arxiv.org/abs/1810.05270
     Sourced from their github at:
-
+    https://github.com/Eric-mingjie/rethinking-network-pruning
     """
 
     def __init__(self, model, test_batch, batch_size, device="cuda"):
