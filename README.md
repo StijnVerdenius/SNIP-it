@@ -95,6 +95,14 @@ To evaluate a model on adversarial attacks (for now only supported on unstructur
 python main.py --eval --model MLP5 --data_set MNIST --checkpoint_name <see_results_folder> --checkpoint_model MLP5_finished --attack CarliniWagner
 ```
 
+### Visualization
+
+Results and saved models will be logged to the terminal, logfiles in result-folders and in tensorboard files in the `/gitignored/results/` folder. To run tensorboard's interface run the following:
+
+```
+tensorboard --logdir ./gitignored/results/
+```
+
 ### Arguments
 
 The regular arguments for running are the following. Additionally, there are some more found in utils/config_utils.py.
@@ -145,30 +153,29 @@ Some notes:
 - Codebase is built modularly so that every criterion or model that is added to its designated folder, provided its filename is equal to its classname, can be ran via string argument immediately. This way its easily extendable.
 - The same goes for training schemes; implemented here as classes and automatically loaded in by string reference. When you need new functionality concerning one aspect of training you can simply inheret the `DefaultTrainer` and then override only that function you need differently. Alternatively, you can make your own training scheme, the sky is the limit!
 - All entry-points go through `main.py`, where the required models are loaded and thereafter redirected to the right training or testing scheme.
-- All results show up at the path `/gitignored/results/` in its own (dated) folder. In here you find a copy of the codebase at the time of execution, its calling command, tensorboard output, saved models and logs.
-- In the file utils/autoconfig.json certain automatic configurations get set to make it easier to run different models in sequence. You can disable this with `--disable_autoconfig`, but it is *strongly recommended against*.
+- All results show up at the path `/gitignored/results/` in its own (date-stamped) folder. In here you find a copy of the codebase at the time of execution, its calling command, tensorboard output, saved models and logs.
+- In the file `utils/autoconfig.json` certain automatic configurations get set to make it easier to run different models in sequence. You can disable this with `--disable_autoconfig`, but it is *strongly recommended against*.
 
 
 ### How to run the other baselines
-
-```
-## unpruned baselines
-python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion EmptyCrit --epochs 80 --pruning_limit 0.0
-python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion EmptyCrit --epochs 80 --pruning_limit 0.0
-
-## structured baselines
-python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion StructuredRandom --pruning_limit 0.93 --epochs 80
-python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion GateDecorators --pruning_limit 0.93 --epochs 70 --checkpoint_name <unpruned_results_folder> --checkpoint_model VGG16_finished 
-python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion EfficientConvNets --pruning_limit 0.93 --epochs 80 --prune_delay 69 --prune_freq 1
-python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion GroupHoyerSquare --hoyer_reg <REG> --epochs 80 --prune_delay 69 --prune_freq 1 --group_hoyer_square
-python3 main.py --model VGG16 --data_set CIFAR10 --l0_reg <REG> --epochs 160 --l0
-
-## unstructured baselines
-python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion UnstructuredRandom --pruning_rate 0.98 --pruning_limit 0.98 --outer_layer_pruning --epochs 80
-python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion <SNIP or GRASP> --pruning_limit 0.98 --outer_layer_pruning --epochs 80
-python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion HoyerSquare --hoyer_reg <REG> --outer_layer_pruning --epochs 80 --prune_delay 69 --prune_freq 1 --hoyer_square
-python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion IMP --pruning_limit 0.98 --outer_layer_pruning --epochs 80 --prune_delay 4 --prune_freq 4 --enable_rewinding --rewind_to 6
-```
+> ```
+> ## unpruned baselines
+> python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion EmptyCrit --epochs 80 --pruning_limit 0.0
+> python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion EmptyCrit --epochs 80 --pruning_limit 0.0
+> 
+> ## structured baselines
+> python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion StructuredRandom --pruning_limit 0.93 --epochs 80
+> python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion GateDecorators --pruning_limit 0.93 --epochs 70 --checkpoint_name <unpruned_results_folder> --checkpoint_model VGG16_finished 
+> python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion EfficientConvNets --pruning_limit 0.93 --epochs 80 --prune_delay 69 --prune_freq 1
+> python3 main.py --model VGG16 --data_set CIFAR10 --prune_criterion GroupHoyerSquare --hoyer_reg <REG> --epochs 80 --prune_delay 69 --prune_freq 1 --group_hoyer_square
+> python3 main.py --model VGG16 --data_set CIFAR10 --l0_reg <REG> --epochs 160 --l0
+> 
+> ## unstructured baselines
+> python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion UnstructuredRandom --pruning_rate 0.98 --pruning_limit 0.98 --outer_layer_pruning --epochs 80
+> python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion <SNIP or GRASP> --pruning_limit 0.98 --outer_layer_pruning --epochs 80
+> python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion HoyerSquare --hoyer_reg <REG> --outer_layer_pruning --epochs 80 --prune_delay 69 --prune_freq 1 --hoyer_square
+> python3 main.py --model ResNet18 --data_set CIFAR10 --prune_criterion IMP --pruning_limit 0.98 --outer_layer_pruning --epochs 80 --prune_delay 4 --prune_freq 4 --enable_rewinding --rewind_to 6
+> ```
 ### Licence
 
-[Licence](LICENSE) 
+[MIT Licence](LICENSE) 
