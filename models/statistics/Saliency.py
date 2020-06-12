@@ -5,6 +5,12 @@ class Saliency:
 
     """
     Analyses saliency maps
+    Loosly based on the paper:
+    Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps
+    https://arxiv.org/abs/1312.6034
+    and the public python library:
+    flashtorch
+    https://github.com/MisaOgura/flashtorch
     """
 
     def __init__(self, model, device, x):
